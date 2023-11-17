@@ -11,7 +11,9 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'darkorange';
         $g->birthday = '1990-07-31';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 1;
         $g->save();
+        
         $g = new Goat();
         $g->sex = false;
         $g->name = "Bastien";
@@ -19,7 +21,9 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'purple';
         $g->birthday = '2004-07-21';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 1;
         $g->save();
+        
         $g = new Goat();
         $g->sex = false;
         $g->name = "Alexandre";
@@ -27,7 +31,9 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'red';
         $g->birthday = '2004-08-23';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 1;
         $g->save();
+        
         $g = new Goat();
         $g->sex = false;
         $g->name = "Léo";
@@ -35,7 +41,9 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'green';
         $g->birthday = '2003-10-11';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 1;
         $g->save();
+        
         $g = new Goat();
         $g->sex = true;
         $g->name = "Miruna";
@@ -43,7 +51,9 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'green';
         $g->birthday = '2003-04-03';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 1;
         $g->save();
+        
         $g = new Goat();
         $g->sex = false;
         $g->name = "Evan";
@@ -51,7 +61,9 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'black';
         $g->birthday = '2004-02-06';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 1;
         $g->save();
+        
         $g = new Goat();
         $g->sex = false;
         $g->name = "Erwann";
@@ -59,7 +71,9 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'orange';
         $g->birthday = '2003-03-21';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 1;
         $g->save();
+        
         $g = new Goat();
         $g->sex = false;
         $g->name = "Alhousseyni";
@@ -67,7 +81,9 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'blue';
         $g->birthday = '2003-10-12';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 1;
         $g->save();
+        
         $g = new Goat();
         $g->sex = false;
         $g->name = "Adam";
@@ -75,7 +91,9 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'green';
         $g->birthday = '2004-10-04';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 1;
         $g->save();
+        
         $g = new Goat();
         $g->sex = false;
         $g->name = "Hugo";
@@ -83,7 +101,9 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'black';
         $g->birthday = '2002-03-18';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 2;
         $g->save();
+        
         $g = new Goat();
         $g->sex = false;
         $g->name = "Guillaume";
@@ -91,5 +111,7 @@ class GoatSeeder extends Seeder{    /**     * Run the database seeds.     */    
         $g->color = 'blue';
         $g->birthday = '2004-04-09';
         $g->image_path = '/goat_'.$cpt++.'.jpg';
+        $g->user_id = 2;
         $g->save();
+        
     }}

@@ -23,10 +23,10 @@
                 @error('price') <p class="text-red-500 text-xs">{{ $message }}</p> @enderror
             </div>
 
+            <!-- Custom Color Picker -->
             <div class="mb-4">
-                <label class="block text-gray-700">Couleur</label>
-                <input type="text" placeholder="Couleur" name="color" value="{{ old('color') }}" class="border p-2 w-full">
-                @error('color') <p class="text-red-500 text-xs">{{ $message }}</p> @enderror
+                <label for="color-picker" class="block text-gray-700">Choisi une couleur :</label>
+                <input id="color-picker" type="color">
             </div>
 
             <div class="mb-4">
@@ -37,5 +37,19 @@
 
             <button class="bg-blue-500 text-white py-2 px-4 rounded">Valider</button>
         </form>
-    </div>
+
+        <!-- Custom Color Picker -->
+        {{-- <div id="image-container">
+            <img id="image" src="image.jpg">
+        </div>
+    </div> --}}
+
+    <script>
+        const colorPicker = document.getElementById("color-picker");
+        const image = document.getElementById("image");
+
+        colorPicker.addEventListener("input", function() {
+            image.style.filter = `hue-rotate(${this.value}deg)`;
+        });
+    </script>
 @endsection

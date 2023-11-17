@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
@@ -8,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="/style.css">
     @vite('resources/css/app.css')
 </head>
+
 <body>
     @yield('main')
-    
 </body>
+
 </html>

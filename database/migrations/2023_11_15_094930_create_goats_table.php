@@ -21,6 +21,7 @@ class CreateGoatsTable extends Migration
             $table->string('color');
             $table->date('birthday');
             $table->string('image_path')->nullable();
+            $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });
     }

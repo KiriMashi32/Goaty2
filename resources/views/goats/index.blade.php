@@ -3,7 +3,7 @@
 @section('main')
     <div class="py-4">
         <h1 class="text-3xl font-bold mb-4">All the goats</h1>
-        <a href="/goats/create" class="bg-blue-500 text-white py-2 px-4 rounded">+</a>
+        <a href="/goats/create" class="bg-blue-500 text-white py-2 px-4 rounded">Nouvelle Goat</a>
 
         <table class="w-full mt-4 border">
             <thead>
