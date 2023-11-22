@@ -10,7 +10,7 @@ class Counter extends Component
 {
     public string $username = "";
     public string $name = "";
-    public string $price = "";
+    public int $price;
     public int $count = 0;
     public Collection $goats;
     
@@ -19,6 +19,8 @@ class Counter extends Component
         $this->username = 'John Doe';
         $this->count = 0;
         $this->goats = Goat::all();
+        $this->price = 0;
+        $this->name = "titi";
     }
     
     public function increment()
@@ -37,7 +39,7 @@ class Counter extends Component
         $g->name = $this->name;
         $g->price = $this->price;
         $g->color = "darkorange";
-        $g->birthday = "21-07-2004";
+        $g->birthday = "2004-07-21";
         $g->sex = 0;
         $g->user_id = 1;
         $g->save();

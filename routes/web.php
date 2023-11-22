@@ -33,3 +33,8 @@ Route::middleware([
 Route::get('/test-livewire', function() {
     return view('counter-container');
 });
+
+
+Route::get('/admin', function(){
+    return view('admin.admin-panel');
+})->name('administration')->middleware('is_admin');

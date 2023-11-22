@@ -10,8 +10,8 @@
         </div>
     </div>
 
-    <input wire.model="name" type="text">
-    <input wire.model="price" type="number">
+    <input wire:model="name" type="text">
+    <input wire:model="price" type="number">
     <x-button wire:click="add">Ajouter</x-button>
     <!-- Goats Table -->
     <table class="w-full mt-4 border">
