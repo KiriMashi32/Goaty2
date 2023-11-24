@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\GoatController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +30,8 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/admin', [UserController::class, 'admin_panel'])->middleware('is_admin');
+
 });
 
 Route::get('/test-livewire', function() {
@@ -35,6 +39,5 @@ Route::get('/test-livewire', function() {
 });
 
 
-Route::get('/admin', function(){
-    return view('admin.admin-panel');
-})->name('administration')->middleware('is_admin');
+
+
