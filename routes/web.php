@@ -38,6 +38,9 @@ Route::get('/test-livewire', function() {
     return view('counter-container');
 });
 
+Route::get('/goats/create', [GoatController::class, 'create'])->name('goats.create');
+
+
 
 
 

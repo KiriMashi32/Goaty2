@@ -13,7 +13,13 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('SlowBoard') }}
+                        {{ __('All the Goats') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('goats.create') }}" :active="request()->routeIs('goats.create')">
+                        {{ __('Create a Goat') }}
                     </x-nav-link>
                 </div>
             </div>
