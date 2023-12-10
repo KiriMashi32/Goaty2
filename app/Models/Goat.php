@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Goat extends Model
 {
+
+
     use HasFactory;
 
     public function owner()

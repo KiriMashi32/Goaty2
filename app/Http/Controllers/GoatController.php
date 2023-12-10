@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Goat;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class GoatController extends Controller
 {
@@ -32,6 +33,7 @@ class GoatController extends Controller
         $goat->price = $request->input('price');
         $goat->color = $request->input('color');
         $goat->birthday = $request->input('birthday');
+        $goat->user_id = Auth::user()->id;
         $goat->save();
 
         return redirect('/goats/' . $goat->id);

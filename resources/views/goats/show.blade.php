@@ -16,7 +16,7 @@
             <li><strong>Couleur : </strong> {{$goat->color}}</li>
             <li><strong>Prix : </strong> {{$goat->price}}</li>
         </ul>
-        <a href="/goats" class="text-yellow-300 hover:text-yellow-500 block mt-4">All the goats</a>
+        <a href="/dashboard" class="text-yellow-300 hover:text-yellow-500 block mt-4">All the goats</a>
     </div>
 </div>
 
